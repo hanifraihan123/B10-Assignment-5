@@ -16,7 +16,7 @@ document.getElementById('btn-blog').addEventListener('click', function(){
         const p = document.createElement('p');
         p.innerText = `${amount} Taka is Donated for famine-2024 at Feni, Bangladesh`;
         document.getElementById('transaction-container').appendChild(p);
-        alert('Donation complete succesfully')
+        alert('Donation complete successfully')
         document.getElementById('input-amount').value = '';
     }
     else{
@@ -38,7 +38,7 @@ event.preventDefault();
         const p = document.createElement('p');
         p.innerText = `${amount} Taka is Donated for Flood Relief in Feni,Bangladesh`;
         document.getElementById('transaction-container').appendChild(p);
-
+        alert('Donation complete successfully');
         document.getElementById('input-flood-amount').value = '';
     }
     else{
@@ -61,7 +61,7 @@ document.getElementById('btn-quota').addEventListener('click', function (event){
         const p = document.createElement('p');
         p.innerText = `${amount} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh`;
         document.getElementById('transaction-container').appendChild(p);
-
+        alert('Donation complete successfully');
         document.getElementById('input-quota').value = '';
     }
     else{
