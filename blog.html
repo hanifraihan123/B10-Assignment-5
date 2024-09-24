@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    Hi hlw
+    <header class="sticky top-0 z-10 glass">
+        <nav  class="flex justify-between px-8 py-4 bg-[#F9F7F3]">
+            <div>
+                <button id="btn-home" class="font-bold bg-[#B4F461] px-4 py-1 rounded-md">Home</button>
+            </div>
+            <div class="flex justify-center gap-2">
+                <div><img class="" src="assets/logo.png" alt=""></div>
+                <div><h5 class="font-bold text-lg mt-2">Donate Bangladesh</h5></div>
+                
+            </div>
+            <div class="flex text-center">
+                <img src="assets/coin.png" alt="">
+                <p class="font-bold text-sm"><span id="current-balance">5500</span> BDT</p>
+            </div>    
+        </nav>
+        </header>
+<main>
+    <div tabindex="0" class="collapse collapse-arrow border-base-300 my-6 p-4 bg-base-200 border">
+        <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+        <div class="collapse-content">
+          <p>The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web. This guide will introduce the DOM, look at how the DOM represents an HTML document in memory and how to use APIs to create web content and applications.</p>
+        </div>
+      </div>
+
+      <div tabindex="0" class="collapse collapse-arrow border-base-300 my-6 p-4 bg-base-200 border">
+        <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+        <div class="collapse-content">
+          <p>JavaScript provides several methods to select DOM elements. Here are some of them: <br>
+            Using getElementById <br>
+            Using getElementsByClassName <br>
+            Using getElementsByTagName <br>
+            Using querySelector <br>
+            Using querySelectorAll </p>
+        </div>
+      </div>
+      
+      <div tabindex="0" class="collapse collapse-arrow border-base-300 my-6 p-4 bg-base-200 border">
+        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+        <div class="collapse-content">
+          <p>It refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. This can be done on a particular target element using the . target property of an event object.</p>
+        </div>
+      </div>
+      
+      <div tabindex="0" class="collapse collapse-arrow border-base-300 my-6 p-4 bg-base-200 border">
+        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+        <div class="collapse-content">
+          <p>Changing an element's style (CSS) attributes is one of the ways in which the DOM can be used. For example, in the code below, the onfocus event handler method is used to change the element's style when the user clicks inside it. When this event occurs, the element's background color will change to purple.</p>
+        </div>
+      </div>
+</main>
+        <script src="blog.js"></script>
 </body>
 </html>

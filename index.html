@@ -24,12 +24,12 @@
     </div>    
 </nav>
 <div class="text-center space-x-2 py-6">
-    <button class="font-bold bg-[#B4F461] px-4 py-1 rounded-md">Donation</button>
-    <button class="font-bold bg-[#B4F461] px-4 py-1 rounded-md">History</button>
+    <button id="btn-donation" class="font-bold bg-[#B4F461] px-4 py-1 rounded-md">Donation</button>
+    <button id="btn-history" class="font-bold bg-[#B4F461] px-4 py-1 rounded-md">History</button>
 </div>
     </header>
     <main>
-<section class="p-8" >
+<section id="donate-section" class="p-8" >
 
     <div class="mt-6 border-2 border-solid-black">
         <div class="card shadow-xl flex flex-row p-6">
@@ -115,7 +115,12 @@
           
     </div>
 </section>
+<section id="History-section" class="hidden">
+    <div id="transaction-container">
+        
 
+    </div>
+</section>
     </main>
     <footer>
 
