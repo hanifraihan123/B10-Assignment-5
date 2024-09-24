@@ -2,7 +2,6 @@ document.getElementById('btn-blog').addEventListener('click', function(){
     window.location.href = './blog.html';
 })
 
-
     document.getElementById('btn-donate').addEventListener('click', function(event){
         event.preventDefault();
         const amount = getInputValue('input-amount');
@@ -15,7 +14,9 @@ document.getElementById('btn-blog').addEventListener('click', function(){
         document.getElementById('donate-add').innerText = addition;
         const p = document.createElement('p');
         p.innerText = `${amount} Taka is Donated for famine-2024 at Feni, Bangladesh`;
-        document.getElementById('transaction-container').appendChild(p);
+        const p2 = document.createElement('p');
+        p2.innerText = `Date: ` + new Date ();
+        document.getElementById('transaction-container').append(p,p2);
         alert('Donation complete successfully')
         document.getElementById('input-amount').value = '';
     }
@@ -37,7 +38,9 @@ event.preventDefault();
         document.getElementById('donate-flood').innerText = addition;
         const p = document.createElement('p');
         p.innerText = `${amount} Taka is Donated for Flood Relief in Feni,Bangladesh`;
-        document.getElementById('transaction-container').appendChild(p);
+        const p2 = document.createElement('p');
+        p2.innerText = `Date: ` + new Date ();
+        document.getElementById('transaction-container').append(p,p2);
         alert('Donation complete successfully');
         document.getElementById('input-flood-amount').value = '';
     }
@@ -60,7 +63,9 @@ document.getElementById('btn-quota').addEventListener('click', function (event){
         document.getElementById('donate-quota').innerText = addition;
         const p = document.createElement('p');
         p.innerText = `${amount} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh`;
-        document.getElementById('transaction-container').appendChild(p);
+        const p2 = document.createElement('p');
+        p2.innerText = `Date: ` + new Date ();
+        document.getElementById('transaction-container').append(p,p2);
         alert('Donation complete successfully');
         document.getElementById('input-quota').value = '';
     }
